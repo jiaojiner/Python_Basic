@@ -13,18 +13,22 @@ list_ifconfig_result = ifconfig_result.split('\n') #将命令返回结果以\n�
 # print(list_ifconfig_result)
 for x in list_ifconfig_result:
     # print(x.split())
-    for y in x.split():
-        if re.match('.*(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*',y):
-            for ip in y:
-                if y.split('.')[-1] == '255':
-                    mask = y
-                elif y.split('.')[-1] == '0':
-                    network = y
+    for ip in x.split():
+        if re.match('.*(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*',ip):
+            for y in ip:
+                if ip.split('.')[-1] == '255':
+                    mask = ip
+                elif ip.split('.')[-1] == '0':
+                    network = ip
                 else:
-                    ipv4 = y
-print('%-15s : %-15s' % ('IP地址为',ipv4))
-print('%-15s : %-15s' % ('子网掩码为',mask))
-print('%-15s : %-15s' % ('广播地址为',network))
+                    ipv4 = ip
+print('{0:>10s} : {1:<15s}'.format('IP地址为',ipv4))
+print('{0:>10s} : {1:<15s}'.format('子网掩码为',mask))
+print('{0:>10s} : {1:<15s}'.format('广播地址为',network))
+#
+# print('%10s : %-15s' % ('IP地址为',ipv4))
+# print('%10s : %-15s' % ('子网掩码为',mask))
+# print('%10s : %-15s' % ('广播地址为',network))
 
 
 
