@@ -7,6 +7,7 @@
 - list_copy.py--------区别列表引用与复制
 - ifconfig_ip.py------通过ifconfig命令及正则表达式获取ip地址
 - ifconfig_mac.py----通过ifconfig命令及正则表达式获取mac地址
+- fw_conn.py---------通过字典获取防火墙状态信息
 
 
 
