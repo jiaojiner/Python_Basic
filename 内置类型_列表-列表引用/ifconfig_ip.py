@@ -14,7 +14,8 @@ list_ifconfig_result = ifconfig_result.split('\n') #将命令返回结果以\n�
 for x in list_ifconfig_result:
     # print(x.split())
     for ip in x.split():
-        if re.match('.*(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*',ip):
+        # if re.match('.*(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*',ip):
+        if re.findall('.*(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}).*',ip):
             for y in ip:
                 if ip.split('.')[-1] == '255':
                     mask = ip
