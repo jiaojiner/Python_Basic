@@ -8,8 +8,9 @@
 - ifconfig_ip.py------通过ifconfig命令及正则表达式获取ip地址
 - ifconfig_mac.py----通过ifconfig命令及正则表达式获取mac地址
 - fw_conn.py---------通过字典获取防火墙状态信息
-
-
+- gateway.py---------获取Linux系统中得到网关地址
+- http_monitor.py----监控80端口是否打开
+- http_server.py-----简易http服务器
 
 
 
