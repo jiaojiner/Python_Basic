@@ -4,8 +4,11 @@
 # 本人QQ：1945962391
 # 欢迎留言讨论，共同学习进步！
 
-from scapy.all import *
+# from scapy.all import *
 import logging
+from scapy.layers.inet import IP, ICMP
+from scapy.sendrecv import sr1
+
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 
@@ -19,7 +22,7 @@ def qytang_ping(ip):
 
 
 if __name__ == '__main__':
-    result = qytang_ping('192.168.98.5')
+    result = qytang_ping('192.168.98.2')
     # print(result)
     if result[1]:
         print(result[0], '通!')

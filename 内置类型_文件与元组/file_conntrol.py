@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 # -*- enconding = utf-8 -*-
-#该代码由本人学习时编写，仅供自娱自乐！
-#本人QQ：1945962391 
-#欢迎留言讨论，共同学习进步！
+# 该代码由本人学习时编写，仅供自娱自乐！
+# 本人QQ：1945962391
+# 欢迎留言讨论，共同学习进步！
 
 import os
 
@@ -22,13 +22,12 @@ import os
 # qytang3.close()
 # os.mkdir('qytang4')
 # os.mkdir('qytang5')
-os.chdir('test')                        #切换到test目录下
-for file in os.listdir():               #列出目录下的文件名
-    if os.path.isfile(file):            #判断文件是否为文件类型
-        for line in open(file):         #使用文件迭代器读取文件的每一行
-            if 'qytang' in line:        #判断文件中是否存在qytang
+os.chdir('test')  # 切换到test目录下
+for file in os.listdir():  # 列出目录下的文件名
+    if os.path.isfile(file):  # 判断文件是否为文件类型
+        for line in open(file):  # 使用文件迭代器读取文件的每一行
+            if 'qytang' in line:  # 判断文件中是否存在qytang
                 print(file)
-
 
 # qytang_file_list = []
 #

@@ -11,6 +11,8 @@
 - gateway.py---------获取Linux系统中得到网关地址
 - http_monitor.py----监控80端口是否打开
 - http_server.py-----简易http服务器
+- paramiko_ssh.py--使用paramiko远程ssh
+- scapy_ping.py-----使用scapy简写ping函数
 
 
 
