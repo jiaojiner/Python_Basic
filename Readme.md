@@ -13,6 +13,9 @@
 - http_server.py-----简易http服务器
 - paramiko_ssh.py--使用paramiko远程ssh
 - scapy_ping.py-----使用scapy简写ping函数
+- Classtest.py-------类使用示例
+- Pingclass.py-------ping方法类文件
+- Pinginstance.py---ping实例
 
 
 
