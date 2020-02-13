@@ -5,10 +5,12 @@
 # 欢迎留言讨论，共同学习进步！
 
 
-from Pingclass import Pingclass
+def sys_argv(a, b):
+    print(int(a) + int(b))
+
 
 if __name__ == '__main__':
-    ping = Pingclass('192.168.98.29', '192.168.98.2', 5)
-    # ping.ping_one()
-    # ping.src('1.1.1.1')
-    ping.ping()
+    import sys
+
+    print(sys.argv[0])
+    sys_argv(sys.argv[1], sys.argv[2])

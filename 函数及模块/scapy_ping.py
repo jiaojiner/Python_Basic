@@ -22,7 +22,8 @@ def qytang_ping(ip):
 
 
 if __name__ == '__main__':
-    result = qytang_ping('192.168.98.2')
+    import sys
+    result = qytang_ping(sys.argv[1])
     # print(result)
     if result[1]:
         print(result[0], '通!')

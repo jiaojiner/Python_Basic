@@ -4,11 +4,11 @@
 # 本人QQ：1945962391 
 # 欢迎留言讨论，共同学习进步！
 
+import sys
 
-from Pingclass import Pingclass
-
-if __name__ == '__main__':
-    ping = Pingclass('192.168.98.29', '192.168.98.2', 5)
-    # ping.ping_one()
-    # ping.src('1.1.1.1')
-    ping.ping()
+if 'win' in sys.platform:
+    print('this is windows!')
+elif 'linux' in sys.platform:
+    print('this is linux!')
+else:
+    print('other system')

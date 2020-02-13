@@ -16,6 +16,10 @@
 - Classtest.py-------类使用示例
 - Pingclass.py-------ping方法类文件
 - Pinginstance.py---ping实例
+- sys_os.py----------判断系统类型
+- scapy_ping_sys_argv.py--输入实现ping程序
+- save_time_to_file.py--保存时间
+- arg_parse.py-----增加帮助信息
 
 
 
