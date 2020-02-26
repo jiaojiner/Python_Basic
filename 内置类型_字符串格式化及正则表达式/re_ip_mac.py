@@ -12,6 +12,8 @@ str2 = '166    54a2.74f7.0326    DYNAMIC     Gi1/0/11'
 str1_result = re.match('\s*(\w.*\d+)\s+(\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3})\s+(\w*)\s+(\w*)\s+(\w*)\s+(\w*)\s.*',
                        str1).groups()
 str2_result = re.match('\s*\d+\s*(\w{1,4}\.\w{1,4}\.\w{1,4})\.*', str2).groups()
+# print(str1_result)
+# print(str2_result)
 print('=' * 40)
 print('{0:<7s}: {1:<15s}'.format('接口', str1_result[0]))
 print('{0:<7s}: {1:<15s}'.format('接口ip地址', str1_result[1]))

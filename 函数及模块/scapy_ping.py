@@ -4,7 +4,7 @@
 # 本人QQ：1945962391
 # 欢迎留言讨论，共同学习进步！
 
-# from scapy.all import *
+
 import logging
 from scapy.layers.inet import IP, ICMP
 from scapy.sendrecv import sr1
@@ -12,7 +12,7 @@ from scapy.sendrecv import sr1
 logging.getLogger("scapy.runtime").setLevel(logging.ERROR)
 
 
-def qytang_ping(ip):
+def ping(ip):
     ping_pkt = IP(dst=ip) / ICMP()
     ping_result = sr1(ping_pkt, timeout=2, verbose=False)
     if ping_result:
@@ -23,8 +23,7 @@ def qytang_ping(ip):
 
 if __name__ == '__main__':
     import sys
-    result = qytang_ping(sys.argv[1])
-    # print(result)
+    result = ping(sys.argv[1])  # 将用户输入的数字作为参数传入函数
     if result[1]:
         print(result[0], '通!')
     else:

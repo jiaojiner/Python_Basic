@@ -8,7 +8,7 @@
 from Pingclass import Pingclass
 
 if __name__ == '__main__':
-    ping = Pingclass('192.168.98.29', '192.168.98.2', 5)
+    ping = Pingclass('192.168.98.1', '192.168.98.29')
     # ping.ping_one()
     # ping.src('1.1.1.1')
     ping.ping()

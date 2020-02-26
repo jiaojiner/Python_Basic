@@ -20,5 +20,5 @@ import random  # 导入random模块
 
 ip_list = []
 for x in range(4):
-    ip_list.append(random.randint(1,255))
+    ip_list.append(random.randint(1, 255))
 print(str(ip_list[0]) + '.' + str(ip_list[1]) + '.' + str(ip_list[2]) + '.' + str(ip_list[3]))
