@@ -8,19 +8,19 @@ from scapy_ping import ping
 from paramiko_ssh import ssh
 
 
-def ssh(ip_list1, username, password, cmd):
-    for ip in ip_list1:
+def ssh(ip_list, username, password, cmd):
+    for ip in ip_list:
         ping_result = ping(ip)
         if ping_result[1] == 1:
             print(ping_result[0], '可达！')
             print('尝试登录', ping_result[0], '执行', cmd, '结果如下：')
-            print(ssh(ip_list1[0], username=username, password=password, cmd=cmd))
+            print(ssh(ping_result[0], username=username, password=password, cmd=cmd))
         else:
             print(ping_result[0], ' 不可达！')
 
 
 if __name__ == '__main__':
-    ip_list1 = ['192.168.98.129', '127.0.0.1']
+    ip_list = ['192.168.98.128', '192.168.98.12']
     username = 'root'
-    password = '1'
-    ssh(ip_list1, username, password, 'ls')
+    password = 'root'
+    # ssh(ip_list, username, password, 'dir')

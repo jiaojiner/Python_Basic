@@ -23,7 +23,8 @@ def ping(ip):
 
 if __name__ == '__main__':
     import sys
-    result = ping(sys.argv[1])  # 将用户输入的数字作为参数传入函数
+    # result = ping(sys.argv[1])  # 将用户输入的数字作为参数传入函数
+    result = '192.168.98.129'
     if result[1]:
         print(result[0], '通!')
     else:

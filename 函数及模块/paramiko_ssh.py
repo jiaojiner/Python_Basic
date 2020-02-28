@@ -7,7 +7,7 @@
 import paramiko
 
 
-def ssh(ip, username, password, port=22, cmd='ls'):
+def ssh(ip, username, password, port=22, cmd='dir'):
     ssh = paramiko.SSHClient()
     ssh.load_system_host_keys()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
@@ -18,5 +18,5 @@ def ssh(ip, username, password, port=22, cmd='ls'):
 
 
 if __name__ == '__main__':
-    print(ssh('192.168.98.29', 'root', '1'))
-    print(ssh('192.168.98.29', 'root', '1', cmd='pwd'))
+    print(ssh('192.168.98.129', 'root', 'root'))
+    # print(ssh('192.168.98.29', 'root', '1', cmd='pwd'))
