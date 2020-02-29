@@ -18,4 +18,9 @@ for elem in tree.iter(tag='技能分类'):  # 找到技能分类标签(tag)
     Skill_dict[elem.attrib['name'][:-4]] = skill_list  # 把XX相关技能的相关技能去掉
     # 把技能名称的列表，添加到以技能为键的字典中，作为技能这个键所映射的值！
 
-print(Skill_dict)
+
+if __name__ == '__main__':
+    import pprint
+    print(Skill_dict)
+    pp = pprint.PrettyPrinter(indent=4)
+    pp.pprint(Skill_dict)
