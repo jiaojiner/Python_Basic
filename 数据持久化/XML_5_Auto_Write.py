@@ -6,8 +6,6 @@
 
 from xml.dom.minidom import Document
 skill_list = {'路由交换': ['RS', 'TCP/IP', 'OSI'], '安全': ['hacker', 'owasp']}
-# QYT_Courses = {'路由交换': ['路由', '交换'], '安全': ['CCNASec', 'ACS5', 'Firewall', 'VPN', 'ISE', 'IPS', 'Secure'], '数据中心': ['Nexus交换机', '数据存储', 'UCS'], '无线': ['无线控制器', 'ISE', 'PI_MSE']}
-# kecheng_dict = {'安全':'Security CCNP','无线':'Wireless CCNP','数据中心':'DataCenter CCNP','路由交换':'RS CCNP'}
 
 doc = Document()
 root = doc.createElement('root')
