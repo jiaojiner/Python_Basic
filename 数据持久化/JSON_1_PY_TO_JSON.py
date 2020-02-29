@@ -36,6 +36,7 @@ print('直接把json字符串转换为Python对象')
 print('-'*80)
 
 # 严重注意JSON内部必须为双引号
+# python中用True，但是JSON中用true
 json_str = '{"较劲儿": {"掌握技能": {"路由交换": ["RS", "TCP/IP", "OSI"], "安全": ["hacker", "owasp"]}}}'
 print('原始JSON数据：', json_str)
 print('-'*80)
