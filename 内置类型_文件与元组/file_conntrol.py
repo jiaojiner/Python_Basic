@@ -30,6 +30,7 @@ for file in os.listdir():  # 列出目录下的文件名
             if 'qytang' in line:  # 判断文件中是否存在qytang关键字
                 print(file)
 
+
 # qytang_file_list = []
 #
 # file_list = os.listdir()
